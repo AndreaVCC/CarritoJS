@@ -1,0 +1,10 @@
+/*.btn{
+    background-color: $color-primary;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: $color-light;
+    margin-top: 10px;
+}*/
+.btn-2{
+    @include myButton;
+}
