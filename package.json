@@ -1,0 +1,22 @@
+{
+  "name": "carritojs",
+  "version": "1.0.0",
+  "description": "Carrito js de video juegos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaVCC/CarritoJS.git"
+  },
+  "author": "AndreaVCC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaVCC/CarritoJS/issues"
+  },
+  "homepage": "https://github.com/AndreaVCC/CarritoJS#readme",
+  "dependencies": {
+    "sass": "^1.52.2"
+  }
+}

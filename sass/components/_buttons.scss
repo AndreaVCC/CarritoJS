@@ -8,3 +8,10 @@
 .btn-2{
     @include myButton;
 }
+
+.btn-outline-1 {
+    color: $color-primary;
+    background-color: transparent;
+    background-image: none;
+    border-color: $color-primary;
+}
