@@ -185,8 +185,6 @@ function mostrarCarritoEnHtml() {
  
     cartNuevo.map(function (item,index) {
 
-
-      
         total = item.subTotal + total;
       
         document.querySelector(".cart").innerHTML += `
@@ -195,10 +193,9 @@ function mostrarCarritoEnHtml() {
                 <td>$${item.precio}</td>
                 <td class="text-center">${item.count}</td>
                 <td>$${item.subTotal}</td>
-                <td> <button onclick="eliminarProducto(${item.id})" class="ml-1 text-right btn p-1"><img src="../img/icons/trash.svg"></button> <td>
+                <td> <button onclick="eliminarProducto(${item.id})" class="ml-1 text-right btn p-1"><img src="trash.svg"></button> <td>
                 </tr>
      `
-
         document.querySelector(".valor").innerHTML = `
         <div class="valortotal d-flex justify-content-between align-items-center">
             <p onclick="vaciarCarrito()" class=" d-inline  btnvaciar m-0 p-1 ">Vaciar carrito</p>
