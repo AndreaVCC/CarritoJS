@@ -195,7 +195,7 @@ function mostrarCarritoEnHtml() {
                 <td>$${item.precio}</td>
                 <td class="text-center">${item.count}</td>
                 <td>$${item.subTotal}</td>
-                <td> <button onclick="eliminarProducto(${item.id})" class="ml-1 text-right btn p-1"><img src="img/icons/trash.svg"></button> <td>
+                <td> <button onclick="eliminarProducto(${item.id})" class="ml-1 text-right btn p-1"><img src="../img/icons/trash.svg"></button> <td>
                 </tr>
      `
 
