@@ -8255,6 +8255,10 @@ h3 {
   box-sizing: border-box;
 }
 
+body {
+  font-size: 62.5%;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.448) !important;
 }
@@ -8370,7 +8374,6 @@ h3 {
 }
 
 .card-content {
-  font-size: 0.75rem;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -8379,10 +8382,6 @@ h3 {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-}
-
-.card__title {
-  font-size: 4vw;
 }
 
 .card__footer {
@@ -8397,21 +8396,6 @@ h3 {
   width: 100%;
 }
 
-@media only screen and (min-width: 550px) {
-  .card__title {
-    font-size: 3vw;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .card__title {
-    font-size: 3vw;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .card__title {
-    font-size: 1.5vw;
-  }
-}
 /*.btn{
     background-color: $color-primary;
     padding: 5px 15px;
