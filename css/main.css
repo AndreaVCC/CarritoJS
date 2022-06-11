@@ -8403,20 +8403,6 @@ body {
     color: $color-light;
     margin-top: 10px;
 }*/
-.btn-2 {
-  color: white;
-  background-color: #864cd2;
-  text-decoration: none;
-  border-radius: 10px;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-}
-.btn-2:hover {
-  color: white;
-  text-shadow: 1px 1px black;
-  background-color: #864cd2;
-}
-
 .btn-outline-1 {
   color: #864cd2;
   background-color: transparent;
