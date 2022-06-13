@@ -4,22 +4,19 @@ background-color:black;
     &__section-primary{
         background-color: $color-secundary;
         color: $color-light;
-        @extend %section-master;
 
     }
     &__subtitle{
         padding-bottom: 20px;
     }
-    &__section-secundary{
-        
-        @extend %section-master;
-    }
+
     &__container{
 
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); /* see notes below */
-            grid-auto-rows: minmax(200px, auto);
-            grid-gap: 1rem;
+            grid-auto-flow:dense;
+            grid-auto-rows:22rem;
+            grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr)); /* see notes below */
+            gap: 1rem;
     }
     
     &__list{
@@ -39,16 +36,20 @@ background-color:black;
 }
 
 
-@media only screen and (min-width: 1200px) {
-  
-
+@media only screen and (min-width: 568px) {
     .main__container{
+      
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /* see notes below */
+        gap: 2rem;
+}
+}
 
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* see notes below */
-        grid-auto-rows: minmax(300px, 500px);
-        grid-gap: 2rem;
+@media only screen and (min-width: 768px) {
+    .main__container{
+        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); /* see notes below */
+        gap: 3rem;
 }
 }
+
 
 

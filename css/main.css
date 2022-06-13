@@ -1,16 +1,12 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
-.main__section-secundary, .main__section-primary, .footer {
-  line-height: 30px;
-}
-
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -8313,6 +8309,10 @@ body {
   margin: 10px;
 }
 
+.footer p {
+  font-size: 1rem;
+}
+
 .main {
   background-color: black;
 }
@@ -8325,10 +8325,11 @@ body {
 }
 .main__container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-auto-flow: dense;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   /* see notes below */
-  grid-auto-rows: minmax(200px, auto);
-  grid-gap: 1rem;
+  gap: 1rem;
 }
 .main__list {
   list-style-position: inside;
@@ -8342,13 +8343,18 @@ body {
   display: flex;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 568px) {
   .main__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     /* see notes below */
-    grid-auto-rows: minmax(300px, 500px);
-    grid-gap: 2rem;
+    gap: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .main__container {
+    grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+    /* see notes below */
+    gap: 3rem;
   }
 }
 .card {
@@ -8369,8 +8375,20 @@ body {
 }
 
 /* li item */
+.card__title {
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+.card picture {
+  height: 50%;
+}
+
 .card img {
-  width: 100%;
+  height: 100%;
 }
 
 .card-content {
@@ -8396,18 +8414,16 @@ body {
   width: 100%;
 }
 
-/*.btn{
-    background-color: $color-primary;
-    padding: 5px 15px;
-    border-radius: 5px;
-    color: $color-light;
-    margin-top: 10px;
-}*/
 .btn-outline-1 {
   color: #864cd2;
   background-color: transparent;
   background-image: none;
   border-color: #864cd2;
+}
+
+.btn-2 {
+  color: white;
+  background-color: #864cd2;
 }
 
 .table, .valortotal {
